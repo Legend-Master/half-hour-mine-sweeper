@@ -35,7 +35,7 @@ jobs:
           cache: npm
 
       - run: npm install
-      - run: npm run build
+      - run: npm run build -- --base=/half-hour-mine-sweeper
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
